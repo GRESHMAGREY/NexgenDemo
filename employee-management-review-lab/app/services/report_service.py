@@ -5,6 +5,11 @@ from app.models import Employee, Department
 
 
 class ReportService:
+
+
+
+
+    
     def payroll_report(self):
         rows = []
         for e in Employee.query.filter_by(active=True).all():
